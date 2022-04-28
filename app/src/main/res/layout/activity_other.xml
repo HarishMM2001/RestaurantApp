@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TableLayout
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <TableRow
+            android:background="@color/white"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Menu Type"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text=" Veg/Non-Veg"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Drinks"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Lemon/Soups"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow android:background="@color/white"
+            android:padding="5dp">
+            <Button android:layout_width="wrap_content"
+                android:text="Starters"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+            <Button android:layout_width="wrap_content"
+                android:text="Kabab/Manchurian 65"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+
+        </TableRow>
+
+        <TableRow android:background="@color/white"
+            android:padding="5dp">
+            <Button android:layout_width="wrap_content"
+                android:text="Main Dish"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Roti/Noodles/Chapathi"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                tools:visibility="visible" />
+
+        </TableRow>
+        <TableRow android:background="@color/white"
+            android:padding="5dp">
+            <Button android:layout_width="wrap_content"
+                android:text="Deserts"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+            <Button android:layout_width="match_parent"
+                android:text="IceCream/Sweet Dish"
+                android:textSize="15dp"
+                android:textColor="#000000"
+
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
